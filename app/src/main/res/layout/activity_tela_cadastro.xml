@@ -20,7 +20,11 @@
         android:id="@+id/btnBackLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="76dp"
+=======
+        android:layout_marginBottom="168dp"
+>>>>>>> origin/master
         android:onClick="voltarLogin"
         android:text="Voltar para o Login"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,68 +35,116 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="584dp"
         android:text="Digite seu email:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.298"
+=======
+        android:layout_marginBottom="756dp"
+        android:text="Digite seu email:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="488dp"
         android:text="Digite seu número de telefone:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.413"
+=======
+        android:layout_marginBottom="652dp"
+        android:text="Digite seu número de telefone:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="388dp"
         android:text="Crie uma senha:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.293"
+=======
+        android:layout_marginBottom="548dp"
+        android:text="Crie uma senha:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="312dp"
         android:text="Confirme sua senha:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.321"
+=======
+        android:layout_marginBottom="448dp"
+        android:text="Confirme sua senha:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="164dp"
+=======
+        android:layout_marginBottom="304dp"
+>>>>>>> origin/master
         android:onClick="cadastrar"
         android:text="Cadastrar Conta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.471"
+=======
+        app:layout_constraintHorizontal_bias="0.498"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editSenha"
         android:layout_width="227dp"
         android:layout_height="48dp"
+<<<<<<< HEAD
         android:layout_marginBottom="340dp"
+=======
+        android:layout_marginBottom="492dp"
+>>>>>>> origin/master
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
+=======
+        app:layout_constraintHorizontal_bias="0.521"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -104,35 +156,58 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.639" />
+=======
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+>>>>>>> origin/master
 
     <EditText
         android:id="@+id/editPhone"
         android:layout_width="223dp"
         android:layout_height="51dp"
+<<<<<<< HEAD
         android:layout_marginBottom="428dp"
+=======
+        android:layout_marginBottom="592dp"
+>>>>>>> origin/master
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.484"
+=======
+        app:layout_constraintHorizontal_bias="0.51"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="231dp"
         android:layout_height="55dp"
+<<<<<<< HEAD
         android:layout_marginBottom="528dp"
+=======
+        android:layout_marginBottom="692dp"
+>>>>>>> origin/master
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.511"
+=======
+        app:layout_constraintHorizontal_bias="0.533"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
