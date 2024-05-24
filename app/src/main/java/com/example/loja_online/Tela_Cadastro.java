@@ -7,30 +7,35 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.mysql.jdbc.PreparedStatement;
+import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.ArrayList;
-import java.util.Collections;
+
+
 
 public class Tela_Cadastro extends AppCompatActivity {
-
+EditText editEmail, editPhone, editPassword,editConfirm ;
+    FirebaseAuth autenticacao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
+        initialize();
     }
 
 
+    public void initialize(){
+         editEmail = findViewById(R.id.editEmail);
+         editPhone = findViewById(R.id.editPhone);
+         editPassword = findViewById(R.id.editSenha);
+         editConfirm = findViewById(R.id.editConfirm);
+
+
+    }
+
     public void cadastrar(View view){
 
-MainActivity main = new MainActivity();
-
-
-        EditText editEmail = findViewById(R.id.editEmail);
-        EditText editPhone = findViewById(R.id.editPhone);
-        EditText editPassword = findViewById(R.id.editPassword);
-        EditText editConfirm = findViewById(R.id.editConfirm);
+autenticacao = ConnectionDb.Fireautenticacao();
 
         String email = editEmail.getText().toString();
         String phone = editPhone.getText().toString();
@@ -41,12 +46,7 @@ MainActivity main = new MainActivity();
         if(password.equals(confirma)) {
 
 
-            Usuario usuario = new Usuario(email, phone, password);
-            if(usuario.searchRows(email,phone)){
 
-
-                usuario.cadastrarUsuario();
-            }
 
 
         }
@@ -55,6 +55,10 @@ trocaTela();
 
 
     }
+
+
+
+
 
     public void voltarLogin(View view){
 

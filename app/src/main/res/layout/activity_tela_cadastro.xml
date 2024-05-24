@@ -6,161 +6,321 @@
     android:layout_height="match_parent"
     tools:context=".Tela_Cadastro">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="AMAZONia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="AMAZONia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnBackLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginBottom="76dp"
-=======
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="228dp"
+            android:layout_marginBottom="616dp"
+            android:text="Digite seu email:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="232dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="548dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="512dp"
+            android:text="Digite seu número de telefone:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="223dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="440dp"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="232dp"
+            android:layout_marginBottom="404dp"
+            android:text="Crie uma senha"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="243dp"
+            android:layout_height="68dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="332dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="204dp"
+            android:layout_marginBottom="296dp"
+            android:text="Confirme sua senha:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/editConfirm"
+            android:layout_width="241dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="232dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="113dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="108dp"
+            android:onClick="cadastrar"
+            android:text="Cadastrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnBackLogin"
+            android:layout_width="111dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="108dp"
+            android:onClick="voltarLogin"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" /><![CDATA[
+
+
+
+        ="@+id/" />
+
+        ="@+id/2" />
+
+        ="@+id/3" />
+
+        ="@+id/4" />
+
+        ="@+id/5" />
+
+        ="@+id/6" />
+
+        =======
         android:layout_marginBottom="168dp"
->>>>>>> origin/master
+        >>>>>>> origin/master
         android:onClick="voltarLogin"
         android:text="Voltar para o Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginBottom="584dp"
-        android:text="Digite seu email:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
-=======
+
+
+        ="@+id/8" />
+
+        ="@+id/9" />
+
+        ="@+id/10" />
+
+        ="@+id/11" />
+
+        ="@+id/12" />
+
+        ="@+id/13" />
+
+
+        =======
         android:layout_marginBottom="756dp"
         android:text="Digite seu email:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.311"
->>>>>>> origin/master
+        >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginBottom="488dp"
-        android:text="Digite seu número de telefone:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.413"
-=======
+        ="@+id/16" />
+
+        ="@+id/17" />
+
+        ="@+id/18" />
+
+        ="@+id/19" />
+
+        ="@+id/20" />
+
+        =======
         android:layout_marginBottom="652dp"
         android:text="Digite seu número de telefone:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.436"
->>>>>>> origin/master
+        >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginBottom="388dp"
-        android:text="Crie uma senha:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
-=======
+        ="@+id/23" />
+
+        ="@+id/24" />
+
+        ="@+id/25" />
+
+        ="@+id/26" />
+
+        ="@+id/27" />
+
+
+        =======
         android:layout_marginBottom="548dp"
         android:text="Crie uma senha:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.309"
->>>>>>> origin/master
+        >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginBottom="312dp"
-        android:text="Confirme sua senha:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.321"
-=======
+        ="@+id/29" />
+
+        ="@+id/30" />
+
+        ="@+id/31" />
+
+        ="@+id/32" />
+
+        ="@+id/33" />
+
+        ="@+id/34" />
+
+
+        =======
         android:layout_marginBottom="448dp"
         android:text="Confirme sua senha:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.339"
->>>>>>> origin/master
+        >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnCadastrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginBottom="164dp"
-=======
+
+
+        ="@+id/36" />
+
+        ="@+id/37" />
+
+        ="@+id/38" />
+
+        ="@+id/39" />
+
+        ="@+id/40" />
+
+        ="@+id/41" />
+
+
+        =======
         android:layout_marginBottom="304dp"
->>>>>>> origin/master
+        >>>>>>> origin/master
         android:onClick="cadastrar"
         android:text="Cadastrar Conta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.471"
-=======
-        app:layout_constraintHorizontal_bias="0.498"
->>>>>>> origin/master
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editSenha"
-        android:layout_width="227dp"
-        android:layout_height="48dp"
-<<<<<<< HEAD
-        android:layout_marginBottom="340dp"
-=======
+        ="@+id/43" />
+
+        ="@+id/44" />
+
+        ="@+id/45" />
+
+        ="@+id/46" />
+
+        ="@+id/47" />
+
+        ="@+id/48" />
+
+
+
+
+
+        ="@+id/50" />
+
+        ="@+id/51" />
+
+        ="@+id/52" />
+
+        ="@+id/53" />
+
+        ="@+id/54" />
+
+        ="@+id/55" />
+
+        =======
         android:layout_marginBottom="492dp"
->>>>>>> origin/master
+        >>>>>>> origin/master
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-=======
-        app:layout_constraintHorizontal_bias="0.521"
->>>>>>> origin/master
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editConfirm"
-        android:layout_width="228dp"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:hint="Confirmar Senha"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        ="@+id/57" />
+
+        ="@+id/58" />
+
+        ="@+id/59" />
+
+        ="@+id/60" />
+
+        ="@+id/61" />
+
+        ="@+id/62" />
+
+        android:id="@+id/63"
+
+        ="@+id/64" />
+
+        ="@+id/65" />
+
+        ="@+id/66" />
+
+        ="@+id/67" />
+
+        ="@+id/68" />
+
+        ="@+id/69" />
+
+
 =======
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
@@ -168,46 +328,101 @@
         app:layout_constraintVertical_bias="0.548" />
 >>>>>>> origin/master
 
-    <EditText
-        android:id="@+id/editPhone"
-        android:layout_width="223dp"
-        android:layout_height="51dp"
-<<<<<<< HEAD
-        android:layout_marginBottom="428dp"
-=======
+
+
+
+
+        ="@+id/71" />
+
+        ="@+id/72" />
+
+        ="@+id/73" />
+
+        ="@+id/74" />
+
+        ="@+id/75" />
+
+        ="@+id/76" />
+
+
+        =======
         android:layout_marginBottom="592dp"
->>>>>>> origin/master
+        >>>>>>> origin/master
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.484"
-=======
-        app:layout_constraintHorizontal_bias="0.51"
->>>>>>> origin/master
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="231dp"
-        android:layout_height="55dp"
-<<<<<<< HEAD
-        android:layout_marginBottom="528dp"
-=======
+        ="@+id/78" />
+
+        ="@+id/79" />
+
+        ="@+id/80" />
+
+        ="@+id/81" />
+
+        ="@+id/82" />
+
+        ="@+id/83" />
+
+
+
+
+
+        ="@+id/85" />
+
+        ="@+id/86" />
+
+        ="@+id/87" />
+
+        ="@+id/88" />
+
+        ="@+id/89" />
+
+        ="@+id/90" />
+
+
+        =======
         android:layout_marginBottom="692dp"
->>>>>>> origin/master
+        >>>>>>> origin/master
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.511"
-=======
+
+        ="@+id/92" />
+
+        ="@+id/93" />
+
+        ="@+id/94" />
+
+        ="@+id/95" />
+
+        ="@+id/96" />
+
+        ="@+id/97" />
+
+
+        =======
         app:layout_constraintHorizontal_bias="0.533"
+        >>>>>>> origin/master
+        app:layout_constraintStart_toStartOf="parent" />
+
+]]>onstraintlayout.widget.ConstraintLayout><![CDATA[=======
+        app:layout_constraintHorizontal_bias="0.521"
+        >>>>>>> origin/master
+        app:layout_constraintStart_toStartOf="parent" />
+
+        ]]><![CDATA[=======
+        app:layout_constraintHorizontal_bias="0.498"
 >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        ]]><![CDATA[=======
+        app:layout_constraintHorizontal_bias="0.51"
+>>>>>>> origin/master
+        app:layout_constraintStart_toStartOf="parent" />
+
+        ]]>
