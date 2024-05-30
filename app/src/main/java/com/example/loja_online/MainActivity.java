@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.mysql.jdbc.PreparedStatement;
+
 
 import java.util.ArrayList;
 
@@ -45,14 +45,11 @@ trocarTela(2);
 
 
 
-if(usuario.searchRows(usuario.getEmail(), usuario.getTelefone())) {
-
-    if(usuario.verifyPassword(usuario.getEmail(), usuario.getTelefone(), usuario.getSenha())) {
 
         trocarTela(0);
-    }
 
-}
+
+
 
 
 

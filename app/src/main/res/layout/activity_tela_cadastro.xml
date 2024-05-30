@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tela_Cadastro">
+    tools:context=".Tela_Cadastro"
+    tools:ignore="ExtraText">
 
         <TextView
             android:id="@+id/textView7"
@@ -20,111 +21,115 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="228dp"
             android:layout_marginBottom="616dp"
             android:text="Digite seu email:"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/editEmail"
-            android:layout_width="232dp"
-            android:layout_height="58dp"
-            android:layout_marginStart="80dp"
+            android:layout_width="241dp"
+            android:layout_height="60dp"
             android:layout_marginBottom="548dp"
             android:ems="10"
             android:hint="Email"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="144dp"
             android:layout_marginBottom="512dp"
             android:text="Digite seu número de telefone:"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/editPhone"
-            android:layout_width="223dp"
-            android:layout_height="57dp"
-            android:layout_marginEnd="108dp"
+            android:layout_width="247dp"
+            android:layout_height="60dp"
             android:layout_marginBottom="440dp"
             android:ems="10"
             android:hint="Telefone"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="232dp"
             android:layout_marginBottom="404dp"
             android:text="Crie uma senha"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/editSenha"
             android:layout_width="243dp"
             android:layout_height="68dp"
-            android:layout_marginEnd="88dp"
             android:layout_marginBottom="332dp"
             android:ems="10"
             android:hint="Senha"
             android:inputType="textPassword"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="204dp"
             android:layout_marginBottom="296dp"
             android:text="Confirme sua senha:"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/editConfirm"
             android:layout_width="241dp"
             android:layout_height="56dp"
-            android:layout_marginEnd="92dp"
             android:layout_marginBottom="232dp"
             android:ems="10"
             android:hint="Senha"
             android:inputType="textPassword"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <Button
-            android:id="@+id/btnCadastrar"
-            android:layout_width="113dp"
-            android:layout_height="58dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="108dp"
-            android:onClick="cadastrar"
-            android:text="Cadastrar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btnBackLogin"
-            android:layout_width="111dp"
-            android:layout_height="59dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="108dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="120dp"
             android:onClick="voltarLogin"
             android:text="Login"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" /><![CDATA[
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="120dp"
+            android:onClick="cadastrar"
+            android:text="Cadastrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" /><![CDATA[
+
+
+
+
 
 
 
@@ -410,19 +415,19 @@
         >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-]]>onstraintlayout.widget.ConstraintLayout><![CDATA[=======
+onstraintlayout.widget.ConstraintLayout>=======
         app:layout_constraintHorizontal_bias="0.521"
         >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-        ]]><![CDATA[=======
+        =======
         app:layout_constraintHorizontal_bias="0.498"
 >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-        ]]><![CDATA[=======
+        =======
         app:layout_constraintHorizontal_bias="0.51"
 >>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent" />
 
-        ]]>
+        ]]> </androidx.constraintlayout.widget.ConstraintLayout>
