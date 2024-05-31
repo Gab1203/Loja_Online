@@ -26,22 +26,25 @@ EditText editEmail, editPhone, editPassword,editConfirm ;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
-        initialize();
+        autenticacao = ConnectionDb.Fireautenticacao();
+initialize();
     }
 
 
     public void initialize(){
-         editEmail = findViewById(R.id.editEmail);
-         editPhone = findViewById(R.id.editPhone);
-         editPassword = findViewById(R.id.editSenha);
-         editConfirm = findViewById(R.id.editConfirm);
+        editEmail = findViewById(R.id.editEmail);
+        editPhone = findViewById(R.id.editPhone);
+        editPassword = findViewById(R.id.editSenha);
+        editConfirm = findViewById(R.id.editConfirm);
 
 
     }
 
     public void cadastrar(View view){
 
-autenticacao = ConnectionDb.Fireautenticacao();
+
+
+
 
         String email = editEmail.getText().toString();
         String phone = editPhone.getText().toString();
@@ -68,9 +71,12 @@ autenticacao.createUserWithEmailAndPassword(user.getEmail(), user.getSenha()).ad
 
 
 
+        }else{
+
+            Toast.makeText(Tela_Cadastro.this, "Senhas não conferem!", Toast.LENGTH_SHORT).show();
+
         }
 
-//trocaTela();
 
 
     }
