@@ -55,54 +55,46 @@ trocarTela(2);
         String login = editLogin.getText().toString();
         String password = editPassword.getText().toString();
 
-        user = new Usuario(login,login,password);
+        if(!login.isEmpty() && !password.isEmpty()) {
+            user = new Usuario(login, login, password);
 
-autenticacao.signInWithEmailAndPassword(user.getEmail(), user.getSenha()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-    @Override
-    public void onComplete(@NonNull Task<AuthResult> task) {
-
-
-        if(task.isSuccessful()){
-
-            trocarTela(0);
-
-        }else{
- String excecao = "";
-            try{
-                throw task.getException();
-
-            }catch(FirebaseAuthInvalidUserException e){
-                excecao = "Usuário não cadastrado";
+            autenticacao.signInWithEmailAndPassword(user.getEmail(), user.getSenha()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
 
 
-            }catch(FirebaseAuthInvalidCredentialsException e){
-                excecao = "Email ou senha incorretos!";
+                    if (task.isSuccessful()) {
 
-            }catch(Exception e){
-                excecao = "Erro ao logar: " + e.getMessage();
-                e.printStackTrace();
+                        trocarTela(0);
 
-            }
+                    } else {
+                        String excecao = "";
+                        try {
+                            throw task.getException();
 
-            Toast.makeText(MainActivity.this, excecao, Toast.LENGTH_SHORT ).show();
+                        } catch (FirebaseAuthInvalidUserException e) {
+                            excecao = "Usuário não cadastrado";
+
+
+                        } catch (FirebaseAuthInvalidCredentialsException e) {
+                            excecao = "Email ou senha incorretos!";
+
+                        } catch (Exception e) {
+                            excecao = "Erro ao logar: " + e.getMessage();
+                            e.printStackTrace();
+
+                        }
+
+                        Toast.makeText(MainActivity.this, excecao, Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+            });
+
+
+        } else{
+            Toast.makeText(MainActivity.this, "Preencha os campos com informações para o login!", Toast.LENGTH_SHORT).show();
         }
-        }
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 

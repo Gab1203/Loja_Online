@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.telephony.ims.ImsStateCallback;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -13,8 +14,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthOptions;
 
-
+import java.util.concurrent.TimeUnit;
 
 
 public class Tela_Cadastro extends AppCompatActivity {
@@ -40,10 +43,7 @@ initialize();
 
     }
 
-    public void cadastrar(View view){
-
-
-
+    public void cadastrar(View view) {
 
 
         String email = editEmail.getText().toString();
@@ -52,35 +52,41 @@ initialize();
         String confirma = editConfirm.getText().toString();
 
 
-        if(password.equals(confirma)) {
+        if (!email.isEmpty() && !phone.isEmpty() && !password.isEmpty() && !confirma.isEmpty())  {
 
-             user = new Usuario(email,phone,password);
-autenticacao.createUserWithEmailAndPassword(user.getEmail(), user.getSenha()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-    @Override
-    public void onComplete(@NonNull Task<AuthResult> task) {
-        if (task.isSuccessful()) {
-            Toast.makeText(Tela_Cadastro.this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+            if (password.equals(confirma)) {
 
-        } else {
+                user = new Usuario(email, phone, password);
 
-            Toast.makeText(Tela_Cadastro.this, "Erro ao cadastrar usuário!", Toast.LENGTH_SHORT).show();
-        }
-    }
 
-});
+                autenticacao.createUserWithEmailAndPassword(user.getEmail(), user.getSenha()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(Tela_Cadastro.this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
 
+                        } else {
+
+                            Toast.makeText(Tela_Cadastro.this, "Erro ao cadastrar usuário!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                });
+
+
+            } else {
+
+                Toast.makeText(Tela_Cadastro.this, "Senhas não conferem!", Toast.LENGTH_SHORT).show();
+
+            }
 
 
         }else{
 
-            Toast.makeText(Tela_Cadastro.this, "Senhas não conferem!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Tela_Cadastro.this, "Os campos estão vazios, coloque suas informações!", Toast.LENGTH_SHORT).show();
 
         }
-
-
-
     }
-
 
 
 
