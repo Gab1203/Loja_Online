@@ -8,7 +8,15 @@ public class Produto {
     private String descricaoProduto;
     private Double precoUnitario;
     private Integer idProduto;
+    private Integer quantidade;
 
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
+    }
 
     public String getNomeProduto() {
         return nomeProduto;
@@ -48,9 +56,9 @@ public class Produto {
     @Override
     public String toString() {
         return "Produto{" +
-                "nomeProduto='" + nomeProduto + '\'' +
-                ", descricaoProduto='" + descricaoProduto + '\'' +
-                ", precoUnitario=" + precoUnitario +
+                "Nome do produto='" + nomeProduto + '\'' +
+                ", Descrição do produto='" + descricaoProduto + '\'' +
+                ", Preço Unitário=" + precoUnitario +
                 '}';
     }
 

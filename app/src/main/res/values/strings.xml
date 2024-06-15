@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Loja_Online</string>
+
+    <string-array name="products">
+
+
+        <item>Camisa</item>
+        <item>Perfume</item>
+        <item>Bermuda</item>
+        <item>Calça</item>
+        <item>Luvas</item>
+
+    </string-array>
 </resources>
