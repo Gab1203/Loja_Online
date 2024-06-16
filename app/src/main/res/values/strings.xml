@@ -1,14 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Loja_Online</string>
-
-    <string-array name="products">
-
-
-        <item>Camisa</item>
-        <item>Perfume</item>
-        <item>Bermuda</item>
-        <item>Calça</item>
-        <item>Luvas</item>
-
-    </string-array>
+    <string name="Loja_Online">Loja_Online\n</string>
 </resources>

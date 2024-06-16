@@ -10,6 +10,16 @@ public class Produto {
     private Integer idProduto;
     private Integer quantidade;
 
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     public Integer getQuantidade() {
         return quantidade;
     }
@@ -55,17 +65,17 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" +
-                "Nome do produto='" + nomeProduto + '\'' +
-                ", Descrição do produto='" + descricaoProduto + '\'' +
-                ", Preço Unitário=" + precoUnitario +
-                '}';
+        return "Nome do produto: " + nomeProduto +
+                ", Descrição do produto: " + descricaoProduto +
+                ", Preço Unitário: R$ " + precoUnitario + ", Quantidade em estoque: " + quantidade;
     }
 
-    public Produto(String nomeProduto, String descricaoProduto, Double precoUnitario, Integer idProduto) {
+    public Produto(String nomeProduto, String descricaoProduto, Double precoUnitario, Integer idProduto, Integer quantidade, String imageUrl) {
         this.nomeProduto = nomeProduto;
         this.descricaoProduto = descricaoProduto;
         this.precoUnitario = precoUnitario;
         this.idProduto = idProduto;
+        this.quantidade = quantidade;
+        this.imageUrl = imageUrl;
     }
 }
