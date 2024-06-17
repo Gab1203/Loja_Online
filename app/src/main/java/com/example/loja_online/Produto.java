@@ -2,6 +2,8 @@ package com.example.loja_online;
 
 import android.content.Intent;
 
+import java.util.Comparator;
+
 public class Produto {
 
     private String nomeProduto;
@@ -11,6 +13,39 @@ public class Produto {
     private Integer quantidade;
 
     private String imageUrl;
+
+    public  static Comparator<Produto> produtoComparatorAz = new Comparator<Produto>() {
+        @Override
+        public int compare(Produto p1, Produto p2) {
+
+            return p1.getNomeProduto().compareTo(p2.getNomeProduto());
+        }
+    };
+
+    public  static Comparator<Produto> produtoComparatorZa = new Comparator<Produto>() {
+        @Override
+        public int compare(Produto p1, Produto p2) {
+
+            return p2.getNomeProduto().compareTo(p1.getNomeProduto());
+        }
+    };
+
+    public  static Comparator<Produto> produtoComparatorPriceAscending = new Comparator<Produto>() {
+        @Override
+        public int compare(Produto p1, Produto p2) {
+
+            return (int) (p2.getPrecoUnitario() - p1.getPrecoUnitario());
+        }
+    };
+
+    public  static Comparator<Produto> produtoComparatorPriceDescending = new Comparator<Produto>() {
+        @Override
+        public int compare(Produto p1, Produto p2) {
+
+            return (int) (p1.getPrecoUnitario() - p2.getPrecoUnitario());
+        }
+    };
+
 
     public String getImageUrl() {
         return imageUrl;

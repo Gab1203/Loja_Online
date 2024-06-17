@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_AZ"
+        android:title="A -> Z" />
+    <item
+        android:id="@+id/menu_ZA"
+        android:title="Z -> A" />
+    <item
+        android:id="@+id/menu_maiorPreco"
+        android:title="Maior Preço" />
+    <item
+        android:id="@+id/menu_menorPreco"
+        android:title="Menor Preço" />
+</menu>
