@@ -24,7 +24,8 @@ import java.util.Collection;
 import java.util.Collections;
 
 public class Market extends AppCompatActivity {
-    private static final String TAG = "Loja Online";
+
+    //Declaração de atributos da classe Market
     ArrayList<Produto> produtoArrayList = new ArrayList<Produto>();
     private RecyclerView productsRecyclerView;
     private RecyclerView.Adapter productsAdapter;
@@ -34,10 +35,10 @@ public class Market extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Construtor da activity Market, responsável pela vizualização de produtos a partir do RecyclerView
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_market);
-
-        Log.d(TAG,"onCreate" + produtoArrayList.toString());
 
         productsRecyclerView = (RecyclerView) findViewById(R.id.recyclerViewProducts);
         productsRecyclerView.setHasFixedSize(true);
@@ -54,6 +55,8 @@ public class Market extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
+        // Função que linka e inicializa o menu de filtragem
+
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.sort_menu,menu);
 
@@ -63,6 +66,8 @@ public class Market extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
+
+        // Função booleana que efetiva e notifica a filtragem do RecylerView
 
         if(item.getItemId() == R.id.menu_AZ){
             Collections.sort(produtoArrayList, Produto.produtoComparatorAz);
@@ -91,6 +96,8 @@ return  super.onOptionsItemSelected(item);
 
     public void fillProductsList(){
 
+        //Procedimento que cria objetos da classe Produtos para aparacerem no RecyclerView
+
 Produto produto1 = new Produto("Bermuda","Bermuda Branca", Double.parseDouble("30"), 1, 6,"https://w7.pngwing.com/pngs/797/72/png-transparent-bermuda-shorts-design-white-active-shorts-art.png");
 Produto produto2 = new Produto("Calça","Calça Jeans", Double.parseDouble("70"), 2, 10,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSbzxck4k8SXh532IcudQUtSXTYC70NkpNpw&s");
 Produto produto3 = new Produto("Camisa","Camisa Preta", Double.parseDouble("65"), 3, 5,"https://img.freepik.com/psd-gratuitas/vista-frontal-de-camiseta-branca-isolada_125540-1194.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718236800&semt=ais_user");
@@ -103,7 +110,7 @@ Produto produto9 = new Produto("Jaqueta","Jaqueta de Couro", Double.parseDouble(
 Produto produto10 = new Produto("Chapéu","Chapéu Preto", Double.parseDouble("39.90"), 10, 3,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlt9b-Oy7LWLOpSMkOmUgINI_7n7AXMy5ylQ&s");
 
 
-
+// Utiliza-se ArrayLists para viabilizar a criação do RecyclerView de produtos
 produtoArrayList.addAll(Arrays.asList(new Produto[] {produto1,produto2,produto3,produto4,produto5,produto6,produto7,produto8,produto9,produto10})) ;
 
 

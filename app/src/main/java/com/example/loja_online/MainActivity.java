@@ -20,12 +20,15 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    //Declaração de atributos da MainActivity(login), incluindo um objeto da classe FirebaseAuth e a classe de Usuario
     EditText editLogin, editPassword;
     FirebaseAuth autenticacao;
     Usuario user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Construtor que inicializa os objetos da activity
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         autenticacao = ConnectionDb.Fireautenticacao();
@@ -51,7 +54,7 @@ trocarTela(2);
 
     public void entrar(View view){
 
-
+//Método que verifica se o usuário está ou não cadastrado para o login
         String login = editLogin.getText().toString();
         String password = editPassword.getText().toString();
 
@@ -101,7 +104,7 @@ trocarTela(2);
 
     public void trocarTela(Integer whichScreen){
 
-
+//Método que faz a troca de tela a partir de um índice passado como parâmetro nessa função
 
         switch (whichScreen) {
 

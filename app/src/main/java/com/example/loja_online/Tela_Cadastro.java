@@ -21,12 +21,16 @@ import java.util.concurrent.TimeUnit;
 
 
 public class Tela_Cadastro extends AppCompatActivity {
+
+    //Criação dos atributos da classe Tela_Cadastro
 EditText editEmail, editPhone, editPassword,editConfirm ;
     FirebaseAuth autenticacao;
     Usuario user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Construtor que inicializa os objetos
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
         autenticacao = ConnectionDb.Fireautenticacao();
@@ -44,7 +48,8 @@ initialize();
     }
 
     public void cadastrar(View view) {
-
+//Método para realizar o cadastro do usuário a partir de inserção dos seus dados e confirmação de senha
+//Utiliza o Firebase como intermediador do processo
 
         String email = editEmail.getText().toString();
         String phone = editPhone.getText().toString();

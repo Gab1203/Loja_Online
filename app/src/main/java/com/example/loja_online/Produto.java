@@ -5,6 +5,7 @@ import android.content.Intent;
 import java.util.Comparator;
 
 public class Produto {
+    //Criação da classe Produto com os respectivos métodos e atributos encapsulados
 
     private String nomeProduto;
     private String descricaoProduto;
@@ -14,6 +15,7 @@ public class Produto {
 
     private String imageUrl;
 
+    //Comparator que auxilia a filtragem dos produtos: O primeiro para ordem alfabética de A-Z, o segundo de Z-A, terceiro compara o preço do maior para o menor e o quarto, menor para o maior
     public  static Comparator<Produto> produtoComparatorAz = new Comparator<Produto>() {
         @Override
         public int compare(Produto p1, Produto p2) {

@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 
 public class Usuario {
-
+    //Criação da classe Usuario com os respectivos métodos e atributos encapsulados
 private String email;
 private String telefone;
 private String senha;

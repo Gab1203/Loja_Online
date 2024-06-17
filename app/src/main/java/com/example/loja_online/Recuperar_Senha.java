@@ -18,11 +18,13 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
 public class Recuperar_Senha extends AppCompatActivity {
+    //Atribuição de objetos da classe Recuperar_Senha
     FirebaseAuth autenticacao;
     EditText editTextEmail;
     Usuario user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Construtor que inicializa os objetos
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recuperar_senha);
         initialize();
@@ -40,6 +42,8 @@ public class Recuperar_Senha extends AppCompatActivity {
 
 
     public void recuperarSenha(View view){
+
+        //Método que, auxiliado pelo Firebase, envia um email de recuperação de conta para o email inserido (o qual deve estar já cadastrado no sistema)
 
         String email = editTextEmail.getText().toString();
 
